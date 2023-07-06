@@ -14,6 +14,11 @@ cask "autogram" do
 
   pkg "Autogram-#{version}.pkg"
 
+  preflight do
+    FileUtils.mkdir_p "#{Dir.home}/Library/Application Support/Autogram/tls/"
+    FileUtils.touch "#{Dir.home}/Library/Application Support/Autogram/tls/skip"
+  end
+
   uninstall pkgutil: "digital.slovensko.autogram",
             quit:    "digital.slovensko.autogram"
 
