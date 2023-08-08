@@ -1,6 +1,6 @@
 cask "autogram" do
-  version "1.99.13"
-  sha256 "aa1e9bce316973a5e1d10c9bf5aacbab5c10b44d113a23965e447c8a81296472"
+  version "1.99.16"
+  sha256 "ef334505de223aa4a1ae12889015f433713b20ab9d3e2e08afa3f52e60bf62ce"
 
   url "https://github.com/slovensko-digital/autogram/releases/download/v#{version}/Autogram-#{version}.pkg"
   name "autogram"
